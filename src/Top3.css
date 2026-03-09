@@ -1,0 +1,124 @@
+/* Top3.css */
+.top3-header-wrapper {
+  display: inline-block;
+  padding: 20px 35px;
+  border-radius: 20px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+
+  margin-left: 20px;
+}
+
+.top3-header-text {
+  font-size: 8rem;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #b0e9ff, #fff7a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  display: inline-block;
+}
+
+.top3-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 80px;
+}
+
+.top3-item {
+  position: relative;
+  width: 250px;
+  z-index: 0;
+}
+
+.rank-number {
+  position: absolute;
+  top: -80px;
+  left: -45px;
+  font-size: 7rem;
+  font-weight: 900;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.95;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s ease-in-out infinite;
+}
+
+/* 1등 — 강렬한 금색 그라데이션 */
+.rank-1 {
+  background-image: linear-gradient(135deg, #ffdd00d0, #dbcd01, #ffe46b);
+}
+
+/* 2등 — 메탈릭 은색 그라데이션 */
+.rank-2 {
+  background-image: linear-gradient(135deg, #e5e5e5, #bfbfbf, #f2f2f2);
+}
+
+/* 3등 — 진한 동색 그라데이션 */
+.rank-3 {
+  background-image: linear-gradient(135deg, #e0853f, #e2823d, #d8a374);
+}
+
+.top3-card {
+  position: relative;
+  width: 250px;
+  background-color: rgba(255, 250, 240, 0.85);
+  border: 2px solid skyblue;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(135, 206, 235, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top3-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(135, 206, 235, 0.4);
+}
+
+.top3-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  z-index: 1;
+}
+
+.top3-card-content {
+  padding: 15px;
+  display: inline-block;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.top3-card-title {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #333;
+  background-color: rgba(188, 255, 188, 0.7);
+  padding: 0 4px;
+}
+
+.top3-card-comment {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.top3-card-date {
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #e0f7ff;
+  padding: 2px 6px;
+  border-radius: 10px;
+  display: inline-block;
+}

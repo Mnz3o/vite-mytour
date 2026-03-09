@@ -1,0 +1,124 @@
+/* ===== 전체 컨테이너 ===== */
+.bucket-wrapper {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #a8d8ff 0%, #ffe58a 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== 제목 ===== */
+.bucket-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* ===== 입력박스 ===== */
+.bucket-input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.bucket-input {
+  flex: 1;
+  padding: 14px;
+  font-size: 17px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background: white;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+.bucket-add-btn {
+  padding: 12px 20px;
+  background-color: #ffeb3b;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bucket-add-btn:hover {
+  background-color: #ffe12a;
+}
+
+/* ===== 리스트 ===== */
+.bucket-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== 개별 카드 ===== */
+.bucket-item {
+  padding: 20px;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.place {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.likes-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== 버튼 ===== */
+.btn-box {
+  display: flex;
+  gap: 10px;
+}
+
+.like-btn {
+  background: #e6f3ff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #0077b6;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.like-btn:active {
+  transform: scale(1.1);
+  background: #d4ecff;
+}
+
+.delete-btn {
+  background: #ff7b7b;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: #ff6262;
+}
